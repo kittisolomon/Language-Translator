@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lang-Translator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7e6cee4785.js" crossorigin="anonymous"></script>
+      <script src="script.js" defer> </script>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="back"><i class="fa fa-chevron-left"></i> </div>
+            <div class="name"><i class="fa-solid fa-robot"></i> Lang-Translate</div>
+            <div class="last" id="clock"></div>
+        </div>
+
+  <ol class="chat" id="chatContainer">
+   
+    <li class="self">
+        <div class="avatar">
+          <i class="fa-solid fa-user" style="margin-left: 10px; margin-top: 7px; font-size: 22px;"></i>
+        </div>
+      <div class="msg" id="textContainer">
+       
+      </div>
+    </li>
+  
+    <li class="other">
+        <div class="avatar">
+            <i class="fa-solid fa-robot" style="margin-left: 6px; margin-top: 7px; font-size: 24px;"></i>
+        </div>
+      <div class="msg" id="transContainer">
+       
+      </div>
+    </li>
+  </ol>
+  
+
+   <!-- Container for input and send button -->
+<div class="input-container">
+  <form id="textForm">
+  <input type="text"  class="textarea" id="transText" placeholder="Message Lang-Translate..."/>
+  <button class="send-button" type="submit" name="submit" id="sub-btn">
+    <i class="fas fa-paper-plane send-color"></i> <!-- Font Awesome send icon -->
+  </button>
+</form>
+</div>
+    </body>
+</html>
